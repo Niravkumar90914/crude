@@ -2,7 +2,7 @@
 /* CODE CREATED BY NIRAV PATEL 26 OCT 2019
  INSERT , UPDATE AND DELETE OPERATION 
  */
-error_reporting(0);
+
 require_once("data_validation.php"); // if $inputOk = 1; all data are validate.
 require_once("DBController.php");
 $dbController = new DBController();
@@ -25,11 +25,13 @@ switch ($action) {
 				$errorMsg["other_error"] = "Image upload failed.";
 			}
 		}
+		break;
 	case "update":
 
-
+		
 	case "delete":
 
+		
 	default:
 		echo json_encode(["status" => "error", "message" => $errorMsg]);
 }
