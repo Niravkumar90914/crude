@@ -16,15 +16,28 @@
 		}
 	</style>
 </head>
-    <div class="container">
-    <div class="card">Data table</div>
-        <table class="table table-bordered">
-            <thead>
-                <tr><th>Name</th><th>Gender</th><th>Date of birth</th><th>Email address</th><th>Mobile number</th><th>State</th><th>City</th><th>Address</th><th>Hobbies</th><th>Photo</th><th>Action</th></tr>
+<div class="container">
+	<div class="card">Data table</div>
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Gender</th>
+				<th>Date of birth</th>
+				<th>Email address</th>
+				<th>Mobile number</th>
+				<th>State</th>
+				<th>City</th>
+				<th>Address</th>
+				<th>Hobbies</th>
+				<th>Photo</th>
+				<th>Action</th>
+			</tr>
 
-            </thead>
-            <tbody></tbody>
-            <tfoot></tfoot>
-        </table>
-    </div>
+		</thead>
+		<tbody></tbody>
+		<tfoot></tfoot>
+	</table>
+</div>
+
 </html>
