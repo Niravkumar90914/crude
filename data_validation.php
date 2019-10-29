@@ -2,6 +2,7 @@
 /* CODE CREATED BY NIRAV PATEL 26 OCT 2019
   DATA VALIDATION FOR STUDENT REGISTRATION FORM : INDEX.PHP
  */
+error_reporting(0);
 define("PHOTO_DIR", $_SERVER["DOCUMENT_ROOT"]."/crude/assets/img/"); //define photo directory for photo upload
 $inputOk = 1; 
 $errorMsg = [];
@@ -143,4 +144,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     }
 	
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+    
+    $action = $_GET["action"];
+
 }

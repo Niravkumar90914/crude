@@ -28,10 +28,18 @@ switch ($action) {
 		break;
 	case "update":
 
-		
+		break;
 	case "delete":
 
+		break;
+	case "display_student_data":
+		$data = $dbController->getDataQuery("SELECT * from student_master");
+		if (!empty($data)) {
+			
+			echo json_encode($data);
+		}
 		
+		break;
 	default:
 		echo json_encode(["status" => "error", "message" => $errorMsg]);
 }
